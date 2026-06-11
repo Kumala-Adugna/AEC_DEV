@@ -3,23 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>The Daily Gospel</title>
+    <link rel="stylesheet" href="News.css">
 </head>
 <body>
-    <!-- 1. Flex - Header Navigation -->
-        <header class="header">
-            <nav class="header-nav">
-                <div class="header-logo">TODAY</div>
-                <div class="header-links">
-                    <a href="#">Home</a>
-                    <a href="#">News</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Articles</a>
-                </div>
-            </nav>
-        </header>
 
-        <!-- 2. Flex and Column-- Flex Featured -->
-         
+    <!-- 1. Header Navigation (Flexbox) -->
+    <header class="header">
+        <nav class="header-nav">
+            <div class="header-logo">GOOD NEWS</div>
+            <div class="header-links">
+                <a href="#">Home</a>
+                <a href="#">The Gospel</a>
+                <a href="#">Scripture</a>
+                <a href="#">Devotionals</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        
+        <!-- 2. Featured Article: The Core Message (Flexbox Row) -->
+        <section class="featured-section">
+            <div class="featured-image">
+                <img src="Images /Gospelnews.png" alt="The Cross of Christ" />
+            </div>
+            <div class="featured-content">
+                <span class="category-tag">The Foundation</span>
+                <h2>The Power of the Gospel: God Became Flesh to Save Us</h2>
+                <p>
+                    The heart of the Christian faith rests on a historic, life-transforming truth: 
+                    the Incarnation. God, in His infinite love, did not remain distant. He stepped into 
+                    human history as Jesus Christ fully God and fully man to rescue humanity from sin, 
+                    conquer death, and reconcile us to the Father.
+                </p>
+                <div class="featured-footer">
+                    <a href="#" class="read-more-btn">Read Full Message</a>
+                    <span class="read-time">4 min read</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- 3. Latest Cards Grid: Elements of Christ's Ministry (CSS Grid) -->
+        <section class="latest-section">
+            <h2 class="section-title">Deepening Your Walk</h2>
+            
+            <div class="news-grid">
+                <!-- Card 1: The Teachings -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="Images /Mountsermon.png" alt="Sermon on the Mount">
+                    </div>
+                    <div class="card-body">
+                        <span class="category-tag">His Words</span>
+                        <h3>The Beatitudes: Jesus Reveals the Path to True Fulfillment</h3>
+                        <p>In the Sermon on the Mount, Jesus flips the world's definition of happiness. 
+                            True blessing isn't found in self-indulgence, but in being poor in spirit and hungering for righteousness.</p>
+                        <div class="card-footer">
+                            <a href="#" class="read-more-btn">Study Matthew 5</a>
+                            <span class="read-time">3 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2: The Hope -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="Images /HopeinJesus.png" alt="The Empty Tomb">
+                    </div>
+                    <div class="card-body">
+                        <span class="category-tag">Our Hope</span>
+                        <h3>He Is Risen: Living in the Reality of the Resurrection</h3>
+                        <p>The empty tomb is the anchor of Christian hope. Because Jesus conquered the grave, 
+                            death has lost its sting, and all who place their trust in Him are promised eternal, resurrected life.</p>
+                        <div class="card-footer">
+                            <a href="#" class="read-more-btn">Read Testimony</a>
+                            <span class="read-time">3 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3: The Call -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="Images /WorthyLife.png" alt="Serving Others">
+                    </div>
+                    <div class="card-body">
+                        <span class="category-tag">The Christian Life</span>
+                        <h3>Walking in the Light: Forgiving Quickly and Fully</h3>
+                        <p>As followers of Christ, the Gospel changes how we treat those around us. Having received radical grace, 
+                            we are commanded to walk in sacrificial love, forgiving others just as Christ forgave us.</p>
+                        <div class="card-footer">
+                            <a href="#" class="read-more-btn">Read Devotional</a>
+                            <span class="read-time">2 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
 </body>
 </html>
