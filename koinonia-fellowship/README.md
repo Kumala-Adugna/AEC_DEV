@@ -1,21 +1,23 @@
 # Koinonia Fellowship
 
-Koinonia Fellowship is a static fellowship landing page built with HTML and CSS. The page introduces a faith-centered community platform where visitors can learn about Bible study groups, discipleship pathways, prayer support, and active study tracks.
+Koinonia Fellowship is a static HTML and CSS website for a Christian fellowship community. It presents Bible study opportunities, discipleship pathways, small group connection, prayer support, and a simple registration form for visitors who want to get involved.
 
-## Overview
+## Project Summary
 
-The project is designed as a polished front-facing page for a Christian fellowship community. It uses a warm visual style, scripture-focused content, image-based study cards, a call-to-action section, an embedded video area, and a registration form for visitors who want to connect with the community.
+This project is built as a polished front-facing fellowship page. The design uses warm earth tones, scripture-focused imagery, clear section structure, and study cards that connect visitors to helpful Bible study resources. It is currently a front-end only project, so it can be opened directly in a browser without installing dependencies.
 
 ## Features
 
-- Hero section with a faith-centered welcome message
-- Fellowship feature section for scripture study, connection, and discipleship
+- Sticky navigation bar with fellowship links and a call-to-action button
+- Hero section with a faith-centered mission message
+- Feature section for scripture study, fellowship connection, and discipleship
 - Call-to-action section for new visitors
-- Introduction video area with styled controls
-- Active study cards for Ephesians and spiritual growth topics
-- Registration form for name, email, study track, and prayer requests
-- Local image assets for Bible study and fellowship visuals
-- Responsive-ready HTML structure using semantic sections and reusable CSS classes
+- Introduction video area with styled action buttons
+- Active study cards focused on Ephesians and spiritual growth
+- External resource links for BibleProject, Deeper Christian, and Enduring Word
+- Registration form for full name, email, study track, and prayer requests
+- Footer with brand message, social links, study resources, and fellowship links
+- Local image assets for Bible study, discipleship, and fellowship visuals
 
 ## Project Structure
 
@@ -37,9 +39,9 @@ koinonia-fellowship/
 
 ## How to Run
 
-Open `koinonia.html` directly in a browser.
+Open `koinonia.html` in a web browser.
 
-No installation is required because this project uses plain HTML and CSS. The page also loads Font Awesome icons from a CDN, so an internet connection is needed for those icons to appear.
+No build step or package installation is required. The project uses plain HTML and CSS. Font Awesome icons load from a CDN, so an internet connection is needed for the icons to display.
 
 ## Technologies Used
 
@@ -47,24 +49,64 @@ No installation is required because this project uses plain HTML and CSS. The pa
 - CSS3
 - Font Awesome CDN
 
-## Main Sections
+## Page Sections
 
-- `Hero`: introduces the fellowship platform and its mission.
-- `Features`: highlights scripture exploration, community connection, and discipleship.
-- `CTA`: encourages visitors to contact the fellowship team.
-- `Video`: reserves space for an introduction video.
-- `Programs`: displays active Bible study topics with image cards.
-- `Registration`: collects visitor information, study interests, and prayer requests.
+| Section | Purpose |
+| --- | --- |
+| Navigation | Provides quick access to main fellowship areas. |
+| Hero | Introduces the platform and its discipleship mission. |
+| Features | Highlights scripture exploration, fellowship, and guided discipleship. |
+| CTA | Encourages visitors to connect with the fellowship team. |
+| Video | Provides space for an introduction video. |
+| Programs | Shows active Bible study tracks with linked resources. |
+| Registration | Collects visitor details, study interest, and prayer requests. |
+| Footer | Shares brand information, social links, and study resources. |
 
-## Notes
+## Form Details
 
-This is currently a static front-end project. The registration form uses the action path `/api/fellowship/register`, but no backend handler is included in this folder yet. The video player references `video.mp4`, so that file should be added if the video section will be used.
+The registration form includes:
+
+- Full name
+- Email address
+- Study track selection
+- Prayer request or message
+
+The form currently submits with `method="POST"` to:
+
+```text
+/api/fellowship/register
+```
+
+A backend endpoint is not included in this folder yet, so the form action is prepared for future integration.
+
+## External Resources
+
+The page links to several study resources:
+
+- BibleProject
+- Deeper Christian
+- Enduring Word
+- Bible Gateway
+- Navigators Bible study guide
+
+## Current Limitations
+
+- The page is static and does not include JavaScript behavior.
+- The form does not save submissions without a backend.
+- The video section references `video.mp4`, but that file is not included yet.
+- Some navigation and footer links are placeholders.
+- Mobile responsiveness can be improved with media queries.
 
 ## Future Improvements
 
-- Add responsive media queries for smaller screens
-- Connect the registration form to a real backend or form service
-- Add the missing `video.mp4` introduction video
-- Improve button actions for the contact and learn-more sections
-- Add form validation and success/error messages
-- Deploy the page with GitHub Pages
+- Add responsive styles for tablets and phones
+- Connect the form to a backend or form service
+- Add client-side form validation
+- Include the missing introduction video file
+- Replace placeholder navigation links with real section anchors
+- Add smooth scrolling for internal page navigation
+- Deploy with GitHub Pages
+
+## Author
+
+Created as part of the AE Dev Summer Camp web projects.

@@ -9,6 +9,19 @@
     <title>Fellowship Platform | Grow in Faith Together</title>
 </head>
 <body>
+    <!-- Navigation Sections -->
+    <nav class="navbar">
+        <div class="navbar__logo">KOINONIA</div>
+        <ul class="navbar__links">
+            <li><a href="#" class="navbar__link active">Home</a></li>
+            <li><a href="#" class="navbar__link">About Us</a></li>
+            <li><a href="#" class="navbar__link">Active Studies</a></li>
+            <li><a href="#" class="navbar__link">Small Groups</a></li>
+        </ul>
+        <div class="navbar__actions">
+            <a href="#" class="navbar__btn">Get Started</a>
+        </div>
+    </nav>
    
     <!-- Hero Section -->
     <header class="hero section-shell">
@@ -73,7 +86,7 @@
 
     <!-- Video Section -->
     <section class="video">
-        <h3 class="video__title">Watch Our Introduction Video</h3>
+        <h3 class="video__title">Discover Life in Community</h3>
          <p class="video__description">
             Discover what makes our fellowship community unique. Click the play button below to watch our introduction video and see how simple it is to get involved with our home study groups.
          </p>
@@ -115,7 +128,9 @@
                       Unlike many of Paul’s other letters Ephesians wasn't written
                         to fix a specific crisis or scold a church for bad behavior.
                      </p>
-                     <button class="programs__button">Learn More</button>
+                     <a href="https://enduringword.com/bible-commentary/ephesians-1/" target="_blank" rel="noopener noreferrer">
+                         <button class="programs__button">Learn More</button>
+                     </a>
                  </div>
            </div>
 
@@ -126,12 +141,14 @@
                    </a>
                  </div>
                 <div class="programs__card-content">
-                     <h3 class="programs__card-title">Grace & Community</h3>
-                     <p class="programs__card-description">
+                    <h3 class="programs__card-title">Grace & Community</h3>
+                    <p class="programs__card-description">
                         Focus on Ephesians 2:8–10 first: It perfectly bridges the gap between being saved by 
                          grace as a free gift.
-                     </p>
-                    <button class="programs__button">Learn More</button>
+                    </p>
+                    <a href="https://enduringword.com/bible-commentary/ephesians-2/" target="_blank" rel="noopener noreferrer">
+                        <button class="programs__button">Learn More</button>
+                    </a>
                  </div>
            </div>
 
@@ -148,7 +165,9 @@
                       Learn how to stand firm in faith, truth, righteousness, and peace within an increasingly 
                       challenging world.
                      </p>
-                    <button class="programs__button">Learn More</button>
+                    <a href="https://enduringword.com/bible-commentary/ephesians-6/" target="_blank" rel="noopener noreferrer">
+                       <button class="programs__button">Learn More</button>
+                    </a>
                  </div>
            </div>
         </div>
@@ -168,7 +187,7 @@
             our latest study launches, home groups, and fellowship events. God bless you!</p>
           
           <!-- SPIRITUAL UPDATE: Set a spiritually aligned backend submission path -->
-          <form action="/api/fellowship/register" class="element__form">
+          <form action="/api/fellowship/register"  method="POST" class="element__form">
               <h3>Your Primary Interests:</h3>
               <ul class="element__list">
                   <li class="element__list__item">Inductive Bible Study</li>
@@ -205,9 +224,45 @@
                   <textarea id="message" name="message" placeholder="Share how we can pray for you or support your journey..."></textarea>
               </div>
 
-              <button type="submit" class="element__button">Join Fellowship</button>
+              <button type="submit" class="element__button" >Join Fellowship</button>
           </form>
         </div>
     </section>
+    <!-- Footer Sections -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand-column">
+                <div class="footer__logo">KOINONIA</div>
+                <p class="footer__tagline">Building a vibrant community of believers dedicated to exploring timeless scriptural truths and true discipleship.</p>
+                <div class="footer__socials">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter-inline"></i><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer__links-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="https://www.biblegateway.com" target="_blank" rel="noopener noreferrer">Bible Gateway</a></li>
+                    <li><a href="https://bibleproject.com" target="_blank" rel="noopener noreferrer">BibleProject Videos</a></li>
+                    <li><a href="https://enduringword.com" target="_blank" rel="noopener noreferrer">Enduring Word Study</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links-column">
+                <h4>Fellowship</h4>
+                <ul>
+                    <li><a href="#">Find a Home Group</a></li>
+                    <li><a href="#">Prayer Requests</a></li>
+                    <li><a href="#">Ministry Leadership</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Koinonia Fellowship Platform. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
