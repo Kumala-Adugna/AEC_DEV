@@ -252,26 +252,75 @@ body {
   
 
 }
+/* ==========================================================================
+   FEATURE SECTION UPGRADE (Merged with your exact structural code)
+   ========================================================================== */
 
 .feature {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px; /* Increased slightly for more professional breathing room */
+    background-color: #faf6f0; /* Soft, warm premium ivory canvas */
+    padding: 60px 40px; /* Adds professional padding around the section */
 }
 
 .feature__container {
-    flex-basis:50%
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text vertically against the image */
+    gap: 35px; /* Creates elegant whitespace between the three text blocks */
 }
+
 .feature__image-container {
-    flex-basis:50%
+    flex-basis: 50%;
 }
 
 .feature__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px; /* Smooth professional rounded edges for the photo */
+    box-shadow: 0 10px 30px rgba(74, 55, 40, 0.1); /* Soft shadow depth */
 }
 
+/* --- Typography & Theme Colors --- */
+
+/* Single feature block container */
+.feature__item {
+    border-left: 3px solid #e6ccb2; /* Subtle structural divider line to guide the eye */
+    padding-left: 20px;
+}
+
+/* Feature Titles Upgraded */
+.feature__title {
+    font-family: 'Cinzel', 'Playfair Display', 'Georgia', serif; /* Elegant spiritual serif */
+    font-size: 1.35rem;
+    color: #4a3728; /* Deep roasted chocolate tone instead of neon green */
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* Active or Selected Title Accent */
+.feature__title--selected {
+    color: #b07d62; /* Warm clay terracotta brown accent */
+}
+
+/* Feature Description Typography */
+.feature__description {
+    font-family: 'Plus Jakarta Sans', 'Inter', 'Helvetica Neue', sans-serif; /* Clean readable sans-serif */
+    font-size: 0.98rem;
+    color: #6b584c; /* Muted earth tone for effortless reading */
+    line-height: 1.6;
+}
+
+/* Emphasized breaking text strings */
+.break-text {
+    display: block;
+    margin-top: 6px;
+    color: #7f6a5b;
+}
 .cta__title {
     font-size: 24px;
     font-weight: 400;
