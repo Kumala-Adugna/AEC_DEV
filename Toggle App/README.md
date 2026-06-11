@@ -1,5 +1,9 @@
 # Vanilla JS Toggle Application
 
+<p align="center">
+  <img src="Images/Toggleimg.png" alt="Toggle App Interface Preview" width="500">
+</p>
+
 A lightweight, interactive mini-application designed to practice clean Document Object Model (DOM) manipulation, event handling, and dynamic styling workflows using vanilla JavaScript, HTML5, and CSS3.
 
 ## 🚀 Features
