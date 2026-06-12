@@ -6,64 +6,46 @@
     <title>Todo-app</title>
     <link rel="stylesheet" href="Todo.css">
 </head>
-
 <body>
     <div>
-    <img src="circle-check-regular-full.svg" alt="To-Do List Icon" width="50" height="50" style="margin-left: -220px;
-     margin-bottom: -65px;color:green;">
-   <h1>To-Do List</h1>
-   <p>Stay organized and productive</p>
+        <img src="circle-check-regular-full.svg" alt="To-Do List Icon" width="50" height="50" style="margin-left: -220px; margin-bottom: -65px; color:green;">
+        <h1>To-Do List</h1>
+        <p>Stay organized and productive</p>
     </div>
     
     <div class="task-form">
-    <form action="text" method="post"  margin-left: -220px;>
-        <input type="text" name="task" placeholder="Add a new task..." Id="Itd" required>
-        <button type="submit" id="Tid"> + Add Task</button>
-
-    </form>
+        <form action="text" method="post">
+            <input type="text" name="task" placeholder="Add a new task..." id="Itd" required>
+            <button type="submit" id="Tid"> + Add Task</button>
+        </form>
     </div>
     <br>
-  <div class="task-list" style="display: flex; flex-direction: row;">
-        
-    <div class="div1">
-       <button ><h2>2</h2>
-       <p>Active</p></button>
 
+    <div class="task-list" style="display: flex; flex-direction: row;">
+        <div class="div1">
+            <button>
+                <h2>0</h2>
+                <p>Active</p>
+            </button>
+        </div>
+
+        <div class="div2">
+            <button>
+                <h2>0</h2>
+                <p>Completed</p>
+            </button>
+        </div>
+
+        <div class="div3">
+            <button>
+                <h2>0</h2>
+                <p>Total</p>
+            </button>
+        </div>
     </div>
 
-    <div class="div2">
-        <button >   <h2>1</h2>
-       <p>Completed</p>  </button>
-    
-    </div>
-
-    <div class="div3">
-       <button ><h2>3</h2>
-       <p>Total</p></button>
-
-    </div>
-       
-    <div></div>
-  
- </div>
-
-     <div class="todo-item">
-        <span class="todo-check">&#10003;</span>
-        <span class="todo-text">Welcome to your to-do list!</span>
-        <button type="button" class="todo-delete" aria-label="Delete task">&times;</button>
-    </div>
+    <div class="todo-container"></div>
    
-    <div class="todo-item">
-        <span class="todo-check">&#10003;</span>
-        <span class="todo-text">Click the checkbox to mark as complete</span>
-        <button type="button" class="todo-delete" aria-label="Delete task">&times;</button>
- </div>
-
-    <div class="todo-item">
-        <span class="todo-check">&#10003;</span>
-        <span class="todo-text">Hover to delete items</span>
-        <button type="button" class="todo-delete" aria-label="Delete task">&times;</button>
- </div>
-   
+    <script src="Todo.js"></script>
 </body>
 </html>
