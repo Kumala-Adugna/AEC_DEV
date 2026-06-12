@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>The Daily Gospel</title>
     <link rel="stylesheet" href="News.css">
 </head>
@@ -14,14 +15,37 @@
             <div class="header-logo">GOOD NEWS</div>
             <div class="header-links">
                 <a href="#">Home</a>
-                <a href="#">The Gospel</a>
-                <a href="#">Scripture</a>
+                <a href="#">Scriptures</a>
+                <a href="#">Gospel News</a>
                 <a href="#">Devotionals</a>
             </div>
         </nav>
     </header>
 
+    <!-- Daily Scripture Banner Section  -->
+    <section class="scripture-banner">
+         <div class="scripture-content">
+            <span class="scripture-label">VERSE OF THE DAY</span>
+            <blockquote class="scripture-text">
+              "For God so loved the world, that he gave his only Son, that whoever believes 
+              in him should not perish but have eternal life."
+            </blockquote>
+            <cite class="scripture-reference">John 3:16</cite>
+          </div>
+    </section>
+
     <main class="main-container">
+
+          <!-- Categories / Topic Filter Bar (Inline Navigation) -->
+
+        <section class="filter-section">
+            <div class="filter-container">
+                <button class="active">All</button>
+                <button class="filter-btn">Parables</button>
+                <button class="filter-btn">Prophecies</button>
+                <button class="filter-btn">Christian Living</button>
+            </div>
+        </section>
         
         <!-- 2. Featured Article: The Core Message (Flexbox Row) -->
         <section class="featured-section">
@@ -101,10 +125,137 @@
                         </div>
                     </div>
                 </article>
+        
             </div>
         </section>
 
+        <hr class="section-divider">
+
+        <!-- Weekly Wisdom Nuggets Section (Flexible Grid Practice) -->
+         <section class="wisdom-section" >
+            <h2 class="section-title">Weekly Wisdom Nuggets</h2>
+            <div class="wisdom-grid">
+                <article class="wisdom-card">
+                    <div class="wisdom-image">
+                        <img src="Images /FaithinGod.png" alt="Image showing Faith in God">
+                    </div>
+                    <div class="wisdom-body">
+                        <span class="category-tag">Faith</span>
+                        <h3>Moving Mountains</h3>
+                        <p>Faith does not make things easy; it makes them possible. 
+                            Even the smallest amount of genuine trust in God can 
+                           shift the heaviest spiritual burdens in your life.</p>
+                         <a href="#" class="wisdom-link">Read Devotional &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="wisdom-card">
+                    <div class="wisdom-image">
+                        <img src="Images /GraceofGod.png" alt="Image Showing Grace of GOD">
+                    </div>
+                    <div class="wisdom-body">
+                        <span class="category-tag">Grace</span>
+                            <h3>Unmerited Favor</h3>
+                            <p> Grace means receiving a clean slate that you didn't earn.
+                               It is the fuel that empowers us to leave behind past mistakes 
+                               and walk forward in complete freedom.</p>
+                            <a href="#" class="wisdom-link">Study Scripture &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="wisdom-card">
+                    <div class="wisdom-image">
+                        <img src="Images /Prayerimg.png" alt="Image of Man Praying God">
+                    </div>
+                    <div class="wisdom-body">
+                        <span class="category-tag">Prayer</span>
+                        <h3>The Power of Silence</h3>
+                        <p>Prayer isn't just about presenting a checklist of requests to God; 
+                            it's about calming your mind enough to listen to His still, 
+                            small voice guiding your steps.</p>
+                        <a href="#" class="wisdom-link"> Join Prayer &rarr;</a>
+
+                    </div>
+                </article>
+
+            </div>
+
+
+         </section>
     </main>
+
+     <hr class="section-divider">
+
+    <!-- The Footer Section -->
+     <footer class="main-footer">
+        <div class="footer-container">
+            <!-- 1.Brand & Mission Block -->
+            <div class="footer-mission">
+                 <div class="footer-logo">GOOD NEWS</div>
+
+                 <p class="footer-mission">"Spreading light and truth through the power of the Gospel. 
+                    Delivering daily encouragement, timeless scriptures, and 
+                    transformative faith resources straight to your screen."</p>
+            </div>
+             
+            <!-- 2.Explore Navigation Links -->
+
+            <div class="footer-col-nav">
+               <h4>QUICK LINKS</h4>
+               <nav>
+                  <a href="#">Home</a>
+                  <a href="#">Scriptures</a>
+                  <a href="#">Gospel News</a>
+                  <a href="#">Devotionals</a>
+               </nav>
+
+             
+            </div>
+
+            <div class="footer-col-social">
+              <h4>FOLLOW US</h4>
+              <nav>
+                 <a href="https://www.youtube.com/@Kumalaadugna1" target="_blank">
+                      <i class="fa-brands fa-youtube"></i> YouTube
+                  </a>
+                 <a href="https://www.instagram.com" target="_blank">
+                      <i class="fa-brands fa-instagram"></i> Instagram
+                 </a>
+                 <a href="https://www.facebook.com" target="_blank">
+                      <i class="fa-brands fa-facebook"></i> Facebook
+                 </a>
+                 <a href="https://www.x.com" target="_blank">
+                     <i class="fa-brands fa-x-twitter"></i> X (Twitter)
+                 </a>
+                 <a href="https://www.linkedin.com/in/kumala-adugna-42812729b" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> Linkedin
+                 </a>
+               </nav>
+            </div>
+
+
+            <div class="footer-col-subscribe">
+                <h4>STAY CONNECTED</h4>
+                <p>Subscribe to receive weekly scripture devotionals 
+                    and gospel updates directly in your inbox.</p>
+                <form action="#" method="POST" class="subscribe-form">
+                   <div class="form-group">
+                     <label for="subscriber-email" class="visually-hidden">Email Address</label>
+                     <input 
+                         type="email" 
+                          id="subscriber-email" 
+                           name="email" 
+                           placeholder="Enter your email address" 
+                            required>
+                      <button type="submit">Subscribe</button>
+                   </div>
+                </form>
+
+            </div>
+
+        </div>
+
+     </footer>
 
 </body>
 </html>
